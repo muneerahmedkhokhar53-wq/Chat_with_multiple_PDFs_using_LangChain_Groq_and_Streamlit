@@ -1,4 +1,4 @@
-1. pdf-chat
+1. pdf_chat
 Chat with multiple PDFs using LangChain, Groq and Streamlit
 Chat with Multiple PDFs 
 
@@ -9,7 +9,7 @@ Upload your PDFs, click Process, and ask questions about your documents.
 Upload multiple PDFs at once
 Free AI responses powered by Groq (Llama 3.3)
 Free local embeddings via HuggingFace
-Conversation memory — ask follow-up questions
+Conversation memory  ask follow-up questions
 
 4. Setup
 
