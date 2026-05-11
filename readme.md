@@ -1,4 +1,4 @@
-# Chat with Multiple PDFs 📚
+# Chat with Multiple PDFs 
 
 A Streamlit app that lets you chat with multiple PDF documents using AI.
 Upload your PDFs, click Process, and ask questions about your documents.
