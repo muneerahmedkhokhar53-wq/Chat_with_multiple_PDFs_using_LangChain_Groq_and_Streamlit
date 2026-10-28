@@ -1,4 +1,5 @@
 import os
+import html
 import streamlit as st
 from dotenv import load_dotenv
 from pypdf import PdfReader
@@ -55,9 +56,9 @@ def handle_userinput(user_question):
     st.session_state.chat_history = response['chat_history']
     for i, message in enumerate(st.session_state.chat_history):
         if i % 2 == 0:
-            st.write(user_template.replace("{{MSG}}", message.content), unsafe_allow_html=True)
+            st.write(user_template.replace("{{MSG}}", html.escape(message.content)), unsafe_allow_html=True)
         else:
-            st.write(bot_template.replace("{{MSG}}", message.content), unsafe_allow_html=True)
+            st.write(bot_template.replace("{{MSG}}", html.escape(message.content)), unsafe_allow_html=True)
 
 def main():
     st.set_page_config(page_title="Chat with multiple PDFs", page_icon=":books:")
