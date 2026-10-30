@@ -1,25 +1,29 @@
-# Environment variables
+# Secrets and local configuration
 .env
+.streamlit/secrets.toml
 
-# Python cache
+# Python
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
 .Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
-# Virtual environment
+# Virtual environments
 venv/
 env/
 .venv/
 
-# VS Code
+# IDE and OS files
 .vscode/
-
-# FAISS index files
-*.index
-faiss_store/
-
-# OS files
+.idea/
 .DS_Store
 Thumbs.db
+
+# Local vector indexes and uploaded documents
+*.index
+faiss_store/
+uploads/
